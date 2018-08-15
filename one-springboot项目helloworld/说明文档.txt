@@ -1,0 +1,2 @@
+参考地址：https://www.w3cschool.cn/springboot/springboot-w7c2245h.html
+初始化命令:  mvn archetype:generate -DgroupId=springboot -DartifactId=one-springboot项目helloworld -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
