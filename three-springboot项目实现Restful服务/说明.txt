@@ -1,0 +1,18 @@
+CREATE DATABASE springbootdb;
+
+DROP TABLE IF EXISTS `city`;
+CREATE TABLE `city` (
+	`id` INT ( 10 ) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '城市编号',
+	`province_id` INT ( 10 ) UNSIGNED NOT NULL COMMENT '省份编号',
+	`city_name` VARCHAR ( 25 ) DEFAULT NULL COMMENT '城市名称',
+	`description` VARCHAR ( 25 ) DEFAULT NULL COMMENT '描述',
+	PRIMARY KEY ( `id` )
+) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+
+SELECT * FROM city;
+
+insert city VALUES(2,1,"嘉兴市",'浙江省嘉兴市');
+
+
+
+参考地址：https://www.w3cschool.cn/springboot/springboot-9eud24kr.html
