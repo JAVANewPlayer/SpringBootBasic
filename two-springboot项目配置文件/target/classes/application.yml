@@ -1,0 +1,12 @@
+## 家乡属性
+home:
+  province: 浙江省yml
+  city: 嘉兴市yml
+  desc: 我家住在${home.province}的${home.city}
+
+## 随机属性
+user:
+  id: ${random.long}
+  age: ${random.int[1,200]}
+  desc: 隔壁老黄叫做${random.value}
+  uuid: ${random.uuid}
