@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>springboot</groupId>
-  <artifactId>three-springboot项目实现Restful服务</artifactId>
+  <artifactId>three-springboot和mybatis完整web案列</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>three-springboot项目实现Restful服务</name>
+  <name>three-springboot和mybatis完整web案列</name>
   <url>http://maven.apache.org</url>
 
   <!-- Spring Boot 启动父依赖 -->
@@ -21,11 +21,13 @@
   </properties>
 
   <dependencies>
+
     <!-- Spring Boot Web 依赖 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
     <!-- Spring Boot Mybatis 依赖 -->
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
@@ -39,6 +41,7 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>${mysql-connector}</version>
     </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
