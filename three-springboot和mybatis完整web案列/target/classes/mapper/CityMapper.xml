@@ -11,8 +11,8 @@
     <parameterMap id="City" type="springboot.domain.City"/>
 
     <sql id="Base_Column_List">
-		id, province_id, city_name, description
-	</sql>
+        id, province_id, city_name,description
+    </sql>
 
     <select id="findByName" resultMap="BaseResultMap" parameterType="java.lang.String">
         select

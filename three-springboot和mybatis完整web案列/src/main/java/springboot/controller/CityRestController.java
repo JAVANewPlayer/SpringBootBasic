@@ -14,6 +14,8 @@ public class CityRestController {
 
     @RequestMapping(value = "/api/city", method = RequestMethod.GET)
     public City findOneCity(@RequestParam(value = "cityName", required = true) String cityName){
+
+        System.out.println("测试");
         return cityService.findCityByName(cityName);
 
     }

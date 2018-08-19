@@ -18,6 +18,7 @@ public class CityServiceImpl implements CityService {
 
     @java.lang.Override
     public City findCityByName(String cityName) {
+
         return cityDao.findByName(cityName);
     }
 }
