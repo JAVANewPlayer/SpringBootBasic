@@ -1,6 +1,7 @@
 package springboot.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import springboot.dao.CityDao;
 import springboot.domain.City;
 import springboot.service.CityService;
@@ -11,6 +12,8 @@ import springboot.service.CityService;
  * Date: 2018-08-17
  * Time: 上午8:26
  */
+
+@Service
 public class CityServiceImpl implements CityService {
 
     @Autowired
@@ -18,7 +21,8 @@ public class CityServiceImpl implements CityService {
 
     @java.lang.Override
     public City findCityByName(String cityName) {
-
-        return cityDao.findByName(cityName);
+        City res = (City)cityDao.findByName(cityName);
+        System.out.println(res);
+        return res;
     }
 }
