@@ -22,7 +22,7 @@ public class CityServiceImpl implements CityService {
     @java.lang.Override
     public City findCityByName(String cityName) {
         City res = (City)cityDao.findByName(cityName);
-        System.out.println(res);
+        System.out.println("--------------" + res);
         return res;
     }
 }
